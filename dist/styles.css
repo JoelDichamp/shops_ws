@@ -1,0 +1,106 @@
+html, body {
+    margin: 0px;
+    height:  100vh;
+    font-family: Arial;
+    font-size: 12px;
+}
+body {
+    display: flex;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+li {
+    margin-right: 100px;
+    padding: 10px;
+    background-color: lightblue;
+    cursor: pointer; 
+}
+form h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#main-map {
+    width: 70%;
+}
+#map {
+    height: 100%; 
+}
+#interface {
+    width: 30%;
+    height: 100%;
+    padding: 10px
+}
+#div-shop, #div-seller, #div-product {
+    display: none;
+}
+label {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin: 5px 0;
+}
+input[type=submit] {
+    display: block;
+}
+.error {
+    color: red;
+    margin: 5px 5px;
+}
+.msg-info {
+    margin-left: 20px;
+    color: green;
+}
+.form-validation {
+    display: flex;
+    align-items: center;
+}
+
+#div-shop-details {
+    border: 1px solid black;
+    padding: 10px;
+}
+#div-shop-details p {
+    margin-right: 10px;
+}
+#div-shop-details h3, h4 {
+    text-align: center;
+}
+#div-sellers /*, #div-products */ {
+    display: flex;
+    justify-content: flex-start;
+}
+#div-sellers {
+    margin-bottom: 20px;
+}
+#sellers /*, #products */ {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse; 
+    margin: auto;
+}
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+th {
+    background-color: silver;;
+}
+.head-product {
+    width: 200px;
+}
+.head-price {
+    width: 70px;
+}
+.head-image {
+    width: 200px;
+}
+.td_center {
+    text-align: center;
+}
+

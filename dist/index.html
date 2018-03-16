@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gestion de magasins</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div id="main-map">
+            <ul>
+                <li id="li-shop">Magasin</li>
+                <li id="li-seller">Vendeur</li>
+                <li id="li-product">Produit</li>
+            </ul>
+            <div id="map"></div>
+        </div>
+        
+        <div id="interface">
+            <div id="div-shop">
+                <form id="form-shop">
+                    <fieldset>
+                        <h3>Magasin</h3>
+                        <label><span>Magasin :</span>
+                            <input type="text" id="shop">
+                        </label>
+                        <label><span>Latitude :</span>
+                            <input type="text" id="latitude">
+                        </label>
+                        <label><span>Longitude :</span>
+                            <input type="text" id="longitude">
+                        </label>
+                        <div class="form-validation">
+                            <input type="submit" value="Ajouter">
+                            <div id="form-shop-msg"></div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="div-seller">
+                <form id="form-seller">
+                </form>
+            </div>
+
+            <div id="div-product">
+                <form id="form-product">
+                </form>
+            </div>
+
+            <div id="div-shop-details">
+
+            </div>
+
+        </div>
+     
+        <script src="system.js"></script>   
+        <script src="main.js"></script>  
+        <script>   
+            function initApp(){   
+                System.import("main");   
+            }   
+        </script> 
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzgwhThhkNqrQoB9TJ6-NhLR7bCb-ZAHQ&callback=initApp"
+    
+        async defer></script>
+    
+    </body>
+</html>
